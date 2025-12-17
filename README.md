@@ -1,3 +1,24 @@
+ ## DESCRIPCIÓN DE PROYECTO
+
+Este proyecto implementa un sistema de gestión de bibliotecas que no solo administra un catálogo local, sino que se conecta en tiempo real con APIs de otras universidades para ofrecer un repositorio unificado de conocimiento. El sistema permite a los alumnos consultar y leer libros (PDF) tanto locales como externos de forma transparente.
+
+Los patrones de diseño implementados fueron: 
+  MVC, MVVM, MVP, CQRS, DAO y DDD
+
+Este proyecto esta realizado con Nest js y esta conectado a una base de datos local sencilla en MySQL, no involucro practicas de seguridad, solo la implementación de los patrones de diseño de software.
+
+##  Funcionalidades Principales
+###  Módulo Administrador
+* **Gestión de Usuarios:** CRUD completo de bibliotecarios y alumnos.
+* **Catálogo de Libros:** Alta, Baja y Modificación de libros con soporte para almacenamiento de portadas y PDFs en Base64.
+
+###  Módulo Alumno
+* **Buscador Unificado:** Búsqueda en tiempo real que consulta simultáneamente la base de datos local y APIs remotas.
+* **Conectividad Externa:** Integración con sistemas legados (Java/Servlets) mediante consumo de APIs REST.
+
+
+## Información adicional de Nest.js y el proyecto
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
